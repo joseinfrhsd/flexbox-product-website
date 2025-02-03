@@ -16,18 +16,16 @@
     flex-wrap: wrap;
 }
 
-.prduct-card {
+.product-card {
     padding: 2%;
     flex-grow: 1;
     flex-basis: 16%;
 
     display: flex;  /* so child elements can use flexbox stuff too! */
 }
-.product-card {
-    flex: 1 16%
-}
 .product-image img {
     max-width: 100%;
+    height: auto;
   }
   .product-info {
     margin-top: auto;
@@ -47,12 +45,7 @@
       flex: 1 46%;
     }
   }
-  @media (max-width: 480px) {
-    .product-filter {
-      flex-direction: column;
-    }
-  }
-  @media (max-width: 480px) {
+  @media (max-width: 400px) {
     .product-filter {
       flex-direction: column;
     }
@@ -60,4 +53,8 @@
       align-self: flex-start;
     }
   }
-  
+  body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
